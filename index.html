@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>apiss_keiba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://apiss2.github.io/keiba/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>あぴす馬券理論</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <hr>
+    <div class="container">
+        <form action="" method="post" class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <p>
+                    netkeibaのレースIDを入力すると、推奨の買い方を教えてくれます。<br>
+                    レースの時間が近づくほど精度が上がります。<br>
+                    ただし、大量に買うことを推奨されることも多々あるので、実用性は…
+                </p>
+                <div class="form-control">
+                    <!--色々増えるかもしれないので囲っておく-->
+                    <!--レースID入力フォーム-->
+                    <div class="mb-3">
+                        <label for="race_id" class="form-label">レースID <span class="badge bg-danger">必須</span></label>
+                        <input type="number" class="form-control" id="race_id" placeholder="例) 202105050812" required>
+                    </div>
+                    <div class="col-auto" style="text-align: right;">
+                      <button type="submit" class="btn btn-primary mb-3">推論</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div class="container">
+        <footer>
+            <p>&copy; apiss</p>
+        </footer>
+    </div>
+</body>
+</html>
